@@ -15,19 +15,16 @@
         previousMillis = 0;
     }
 
-   void Flasher::Update(unsigned long currentMicros)
+    void Flasher::Update(unsigned long currentMicros)
     {
         if ((ledState == HIGH) && (currentMicros - previousMillis >= OnTime))
         {
-            ledState = LOW;                 // Turn it off
-            previousMillis = currentMicros; // Remember the time
-            digitalWrite(ledPin, ledState); // Update the actual LED
+            ledState = LOW; // Turn it off
         }
         else if ((ledState == LOW) && (currentMicros - previousMillis >= OffTime))
         {
-            ledState = HIGH;                // turn it on
-            previousMillis = currentMicros; // Remember the time
-            digitalWrite(ledPin, ledState); // Update the actual LED
+            ledState = HIGH;
         }
+        previousMillis = currentMicros; // Remember the time
+        digitalWrite(ledPin, ledState); // Update the actual LED
     }
-

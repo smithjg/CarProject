@@ -1,10 +1,9 @@
 #include <Arduino.h>
+#include <stdio.h>
 #include "Test2.h"
 #include "flasher.h"
-//#include "sweeper.h"
 #include "InterruptTimerAction.h"
 #include "RadioInputSample.h"
-#include <stdio.h>
 #include "CommandMapping.h"
 #include "MotorSpeedMeasure.h"
 
