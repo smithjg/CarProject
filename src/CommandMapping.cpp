@@ -32,6 +32,7 @@ static uint8_t given_command_value_return_drive_value(unsigned long comanded_val
 {
     //uint8_t ret_val = (((comanded_value-MIN_DRIVE_VALUE)*MAPPING_SECTORS)/(MAX_COMMANDED_VALUE-MIN_COMMANDED_VALUE)) ;
 
+
     return 0;
 }
 
